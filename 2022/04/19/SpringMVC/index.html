@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="音乐, zydevil">
+    <meta name="keywords" content="SpringMVC, zydevil">
     <meta name="description" content="欲望促使我前进">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>音乐 | zydevil</title>
+    <title>SpringMVC | zydevil</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -288,12 +288,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/21.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">音乐</h1>
+                    <h1 class="description center-align post-title">SpringMVC</h1>
                 </div>
             </div>
         </div>
@@ -407,9 +407,17 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Java/">
+                                <span class="chip bg-color">Java</span>
+                            </a>
+                        
+                            <a href="/tags/SpringMVC/">
+                                <span class="chip bg-color">SpringMVC</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -421,7 +429,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-04-18
+                    2022-04-19
                 </div>
                 
 
@@ -430,7 +438,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    0
+                    683
                 </div>
                 
 
@@ -447,7 +455,32 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <h2 id="SpringMVC的组成和工作流程">SpringMVC的组成和工作流程</h2>
+<h3 id="一、SpringMVC的主要组件">一、SpringMVC的主要组件</h3>
+<p>Handler：处理器，用来处理业务逻辑，可以是一个类，也可以是一个方法</p>
+<p>​	1.HandlerMapping：处理器映射器。根据用户请求资源url查找Handler<br>
+​	2.HandlerAdapter：适配器。让Servlet处理方法调用灵活的Handler。Servlet需要的处理方法结构固定，以request和response为参数的方法。<br>
+​	3.HandlerExceptionResolver：处理SpringMVC中产生的异常，根据异常设置ModelAndView，之后再交给render方法进行渲染<br>
+​	4.ViewResolver：视图解析器，这个组件的主要作用是将String类型的视图名和Locale解析为View类型的视图，只有一个resolveViewName()方法。它会将程序返回的参数和数据填入模板中，生成HTML文件。ViewResolver在这个过程中主要做两件事：ViewResolver会找到渲染所用的模板和所用的技术（其实也就是找到视图的类型，如JSP）并填入参数。<br>
+​	5.RequestToViewNameTranslator：从请求中获取ViewName。因为ViewResolver根据ViewName查找View，但有的Handler处理完成之后，没有设置View，也没有设置ViewName，便要通过这个组件来从请求中查找ViewName。<br>
+​	6.LocaleResolver：LocaleResolver用于从请求中解析出 Locale，比如在中国Locale当然就是zh-CN，用来表示一个区域<br>
+​	7.ThemeResolver：组件是用来解析主题的。主题就是样式、图片及它们所形成的显示效果的集合。Spring MVC中与主题有关的类有ThemeResolver、ThemeSource和Theme。ThemeResolver负责从请求中解析出主题名，ThemeSource则根据主题名找到具体的主题，其抽象也就是Theme，可以通过Theme来获取主题和具体的资源。<br>
+​	8.MultipartResolver：用于处理上传请求，通过将普通的请求包装成MultipartHttpServletRequest来实现。MultipartResolver的作用就是封装普通的请求，使其拥有文件上传的功能。MultipartHttpServletRequest可以通过getFile()方法直接获得文件。如果上传多个文件，还可以调用getFileMap()方法得到 Map&lt; FileName, File&gt; 这样的结构。<br>
+​	9.FlashMapManager：FlashMapManager就是用来管理FlashMap的。<br>
+​			FlashMap：FlashMap用于重定向时的参数传递，通过FlashMap来传递。为了避免重复提交，可以处理完post请求后重定向到一个get请求，这个get请求可以用来显示订单详情之类的信息。只需要在重定向之前将要传递的数据写入请求（可以通过ServletRequestAttributes.getRequest()方法获得）的属性OUTPUT_FLASH_MAP_ATTRIBUTE中，这样在重定向之后的Handler中Spring就会自动将其设置到Model中，在显示订单信息的页面上就可以直接从Model中获得数据。</p>
+<h3 id="二、SpringMVC工作流程">二、SpringMVC工作流程</h3>
+<p>​	1.<br>
+​	2.<br>
+​	3.<br>
+​	4.<br>
+​	5.<br>
+​	6.<br>
+​	7.<br>
+​	8.<br>
+​	9.<br>
+​	10.<br>
+​	11.</p>
+
                 
             </div>
             <hr/>
@@ -473,7 +506,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://zydevil.github.io/music/index.html">https://zydevil.github.io/music/index.html</a>
+                    <a href="https://zydevil.github.io/2022/04/19/SpringMVC/">https://zydevil.github.io/2022/04/19/SpringMVC/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -510,7 +543,15 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/Java/">
+                                    <span class="chip bg-color">Java</span>
+                                </a>
+                            
+                                <a href="/tags/SpringMVC/">
+                                    <span class="chip bg-color">SpringMVC</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -683,13 +724,13 @@
                 <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/music/index.html">
+                <a href="/2022/04/19/SpringMVC/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="音乐">
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="SpringMVC">
                         
-                        <span class="card-title">音乐</span>
+                        <span class="card-title">SpringMVC</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -700,7 +741,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-18
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-19
                             </span>
                         <span class="publish-author">
                             
@@ -712,22 +753,34 @@
                 </div>
 
                 
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Java/">
+                        <span class="chip bg-color">Java</span>
+                    </a>
+                    
+                    <a href="/tags/SpringMVC/">
+                        <span class="chip bg-color">SpringMVC</span>
+                    </a>
+                    
+                </div>
+                
             </div>
         </div>
         
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/music/index.html">
+                <a href="/2022/04/18/%E9%9D%A2%E8%AF%95%E9%A2%98%E6%B1%87%E6%80%BB/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="音乐">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="面试题汇总">
                         
-                        <span class="card-title">音乐</span>
+                        <span class="card-title">面试题汇总</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -748,7 +801,22 @@
                         </span>
                     </div>
                 </div>
-
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E9%9D%A2%E8%AF%95/">
+                        <span class="chip bg-color">面试</span>
+                    </a>
+                    
+                    <a href="/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/">
+                        <span class="chip bg-color">面试题</span>
+                    </a>
+                    
+                    <a href="/tags/%E6%B1%87%E6%80%BB/">
+                        <span class="chip bg-color">汇总</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
