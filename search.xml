@@ -4,6 +4,27 @@
   
     
     <entry>
+      <title>JDK8新特性</title>
+      <link href="/2022/05/17/JDK8%E6%96%B0%E7%89%B9%E6%80%A7/"/>
+      <url>/2022/05/17/JDK8%E6%96%B0%E7%89%B9%E6%80%A7/</url>
+      
+        <content type="html"><![CDATA[<h4 id="1-JDK8新特性">1.JDK8新特性</h4><p><strong>Lambda表达式</strong></p><p><strong>集合之Stream流式操作</strong></p><p>接口的增强</p><p>并行数组排序</p><p>Optional中避免Null检查</p><p>新的时间和日期API</p><p>可重复注解</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+            <tag> JDK8 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>发展计划</title>
       <link href="/2022/05/17/%E5%8F%91%E5%B1%95%E8%AE%A1%E5%88%92/"/>
       <url>/2022/05/17/%E5%8F%91%E5%B1%95%E8%AE%A1%E5%88%92/</url>
