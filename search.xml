@@ -4,6 +4,48 @@
   
     
     <entry>
+      <title>发展计划</title>
+      <link href="/2022/05/17/%E5%8F%91%E5%B1%95%E8%AE%A1%E5%88%92/"/>
+      <url>/2022/05/17/%E5%8F%91%E5%B1%95%E8%AE%A1%E5%88%92/</url>
+      
+        <content type="html"><![CDATA[<p>1.找到一份工作</p><p>2.熟悉应用hexo博客，保持持续更新</p><p>3.按照路线学习，充实自我</p><p><img src="Java_Study.jpg" alt=""></p><p>4.熟悉学习阿里云的使用</p><p>4.能独立的开发自己的网页，并在阿里云上部署，分享知识</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 个人 </tag>
+            
+            <tag> 目标 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>MySQL索引</title>
+      <link href="/2022/05/17/MySQL%E7%B4%A2%E5%BC%95/"/>
+      <url>/2022/05/17/MySQL%E7%B4%A2%E5%BC%95/</url>
+      
+        <content type="html"><![CDATA[<h4 id="1-什么是索引">1.什么是索引?</h4><p>索引是存储引擎用于提高数据库表的访问速度的一种数据结构。</p><h4 id="2-索引的作用？">2.索引的作用？</h4>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> MySQL </tag>
+            
+            <tag> 索引 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>SpringMVC</title>
       <link href="/2022/04/19/SpringMVC/"/>
       <url>/2022/04/19/SpringMVC/</url>
